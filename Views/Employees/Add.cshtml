@@ -1,0 +1,31 @@
+@model MVCcrud.Models.AddEmployeeViewModel
+
+@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<div class="d-flex justify-content-center">
+    <form method="post" action="Add" style="width: 600px">
+        <div class="mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" asp-for="Name"/>
+        </div>
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" asp-for="Email"/>
+        </div>
+        <div class="mb-3">
+            <label>Salary</label>
+            <input type="number" class="form-control" asp-for="Salary"/>
+        </div>
+        <div class="mb-3">
+            <label>Date of Birth</label>
+            <input type="date" class="form-control" asp-for="DateOfBirth"/>
+        </div>
+        <div class="mb-3">
+            <label>Depertment</label>
+            <input type="text" class="form-control" asp-for="Department"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
